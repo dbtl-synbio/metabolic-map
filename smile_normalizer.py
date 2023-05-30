@@ -1,5 +1,4 @@
 from rdkit import Chem
-from rdkit.Chem import Descriptors
 from Filtro.standardizer import Standardizer
 
 "This function normalizes all the SMILE in the same Canon SMILE format."
