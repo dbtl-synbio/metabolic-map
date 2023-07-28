@@ -30,6 +30,7 @@ def generator(r,smile, step, leg_id, ec_num):
     new_step = list()
     for k in productos:
         if k[0] not in smile:
-            new_smile.append(smile_normalizer(k[0]))
+            a, b = smile_normalizer([k[0]])
+            new_smile.append(a)
             new_step.append(k[1])
     return new_smile, new_step
