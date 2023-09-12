@@ -6,7 +6,7 @@ def find_path(G, ini, fin):
   for i in range(len(ini)):
     for j in range(len(fin)):
       if G.has_node(ini[i]) and G.has_node(fin[j]):
-        if nx.has_path(G, ini[i], fin[j]:
+        if nx.has_path(G, ini[i], fin[j]):
           path.append([i,j])
   return path
 
