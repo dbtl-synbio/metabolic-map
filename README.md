@@ -7,4 +7,5 @@ Scripts:
 - create_graph.py: Script que a partir de una lista de metabolitos crea el grafo que los une
 - find_path.py: Script con las funciones para obtener todos los pathways entre dos grupos de metabolitos
 - expand_path.py: Script con las funciones para obtener todos los pathways con sus diferentes rutas y bifurcaciones
+- path_clenaer.py: Script para eliminar posibles paths duplicados dentro de un mismo pathways
 - scope.py: Script con las funciones para obtener el scope de una ruta
