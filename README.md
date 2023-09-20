@@ -9,3 +9,7 @@ Scripts:
 - expand_path.py: Script con las funciones para obtener todos los pathways con sus diferentes rutas y bifurcaciones
 - path_clenaer.py: Script para eliminar posibles paths duplicados dentro de un mismo pathways
 - scope.py: Script con las funciones para obtener el scope de una ruta
+
+
+Files:
+- stats.xlsx: Este archivo contiene diferentes datos sobre el generador y las rutas. Tenemos el número de metabolitos que hay en cada step del generador, cuantos de estos ya han pasado y cuantos faltan por pasar. También tiene una lista de los matches con E.Coli y producibles. Sobre las rutas, tiene la cantidad de pairs en cada diámetro, los metabolitos del grafo y los detectables y producibles que aparecen en el grafo. Hay dos versiones de esta tabla, porque haciendo pruebas he encotrado otra manera de calcular el grafo que obtiene muchas mas pairs.
