@@ -20,4 +20,4 @@ def generate_path(G, ini, fin, limit=100):
   df = pd.DataFrame(list_paths)
   df_len = len(df.iloc[-1])
   keys = list(map(chr, range(65,91)))
-  df.colums = keys[0:df_len]
+  df.columns = keys[0:df_len]
