@@ -13,7 +13,7 @@ def mol_normalizer(smile, mode='inchi'):
         return smile
     return inchi
 
-def mol_similarity(m1, m2, format='inchi'):
+def mol_similarity(m1, m2, mode='inchi'):
     fpgen = AllChem.GetRDKitFPGenerator()
     if mode == 'smile':
         m1 = Chem.MolFromSmiles(m1)
