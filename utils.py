@@ -2,7 +2,6 @@ from rdkit import Chem, DataStructs
 from rdkit.Chem import AllChem
 
 "This function normalizes all the SMILE in the same format. By default the format will be InChI, but it can be changed to SMILE"
-
 def mol_normalizer(smile, mode='inchi'):
     m = Chem.MolFromSmiles(smile)
     Chem.SanitizeMol(m)
@@ -13,6 +12,7 @@ def mol_normalizer(smile, mode='inchi'):
         return smile
     return inchi
 
+"This function returns the similarity of two given molecules. The format of that molecules needs to be indicated, using inchi or smile"
 def mol_similarity(m1, m2, mode='inchi'):
     fpgen = AllChem.GetRDKitFPGenerator()
     if mode == 'smile':
